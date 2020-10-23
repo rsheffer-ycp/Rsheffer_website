@@ -90,10 +90,16 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* Setup the page to have it layout in a easy column */
 body{
   background-color: #47004E;
   color: white;
   white-space: normal;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .media{
@@ -101,14 +107,32 @@ body{
   display: flex;
   white-space: nowrap;
 }
+
+/* got rid of the img tag and put it in the .hero as a background image */
 .hero{
-  width: 100%;
+  width: 100vw;
+  background-image: url('../img/homehero.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1000px;
+  margin: 0px;
 }
+
+/* positioned the nav to the left */
+nav{
+  position: relative;
+  right: 38%;
+  margin-bottom: 8%;
+}
+
+/* fixed margins with H1 */
 h1{
   text-align: center;
   font-family: Astloch;
   font-weight: 400;
   font-size: 175px;
+  margin: 0px;
 }
 ul{
   list-style: none;
@@ -129,6 +153,39 @@ h2{
   font-style: cursive;
   font-size: 50px;
 }
+
+/* added in Media Line styles to get these items to align */
+.media_line{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 5%;
+}
+
+/* Added initial styles to get your contact form setup */
+.contact{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 8%;
+}
+
+/* set the width of the form in the div */
+.contact form{
+  width: 100%;
+}
+
+/* set the initial width of the inputs */
+.contact input{
+  width: 100%;
+  height: 100px;
+  border-radius: 30px;
+}
+
 .footer{
   background: #B88CDB;
   height:10%;
