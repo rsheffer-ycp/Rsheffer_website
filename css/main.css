@@ -100,6 +100,7 @@ body{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  font-family: Helvetica, sans-serif;
 }
 
 .media{
@@ -112,6 +113,26 @@ body{
 .hero{
   width: 100vw;
   background-image: url('../img/homehero.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1000px;
+  margin: 0px;
+}
+
+.hero2{
+  width: 100vw;
+  background-image: url('../img/falloutabout.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1000px;
+  margin: 0px;
+}
+
+.hero3{
+  width: 100vw;
+  background-image: url('../img/HellaMegaPoster.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -133,24 +154,28 @@ h1{
   font-size: 175px;
   margin: 0px;
 }
-ul{
+nav ul{
   list-style: none;
   font-family: unica one;
   font-size: 30px;
   display: inline;
 }
-li {
+nav li {
   display: inline-block;
   padding: 20px;
+}
+ul {
+  list-style: none;
 }
 a{
   text-decoration: none;
   color: inherit;
 }
-h2{
+h2 {
   font-family: unica one;
   font-style: cursive;
   font-size: 50px;
+  text-align: center;
 }
 
 /* added in Media Line styles to get these items to align */
@@ -207,6 +232,10 @@ footer p{
   margin: 0px;
 }
 
+p {
+  text-indent: 30px;
+  margin: 2em;
+}
 /* Off Canvas Menu - Style as your like */
 
 /* The side navigation menu */
@@ -247,6 +276,22 @@ footer p{
   margin-left: 50px;
 }
 
+.media_line img {
+  width: 100%;
+  display: flex;
+}
+
+.tour_dates {
+  margin: 2em;
+  list-style: none;
+}
+hr{
+  width: 50%;
+  text-align: left;
+  margin-left:2em;
+}
+
+
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
   transition: margin-left .5s;
@@ -263,6 +308,15 @@ footer p{
   display: inline;
 }
 
+.hamburger{
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+@media screen and (max-width: 768px){
+}
+@media screen and (max-width: 320px){
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
