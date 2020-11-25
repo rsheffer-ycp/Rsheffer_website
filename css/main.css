@@ -148,6 +148,8 @@ h1 {
 	font-size: 175px;
 	margin: 0px;
 	padding-top: 5%;
+	position:relative;
+	top:-100px;
 }
 nav ul {
 	list-style: none;
@@ -263,14 +265,20 @@ footer {
   align-items: center;
 }
 
-footer p {
-	margin: 0px;
-}
 p {
 	text-indent: 30px;
 	padding: .5em 3em;
 	margin-left: 4em;
 	margin-right: 4em;
+	font-size: 16pt;
+}
+footer p {
+	margin: 0px;
+	text-indent: 0px;
+	padding: 0px;
+	margin-left: 0em;
+	margin-right: 0em;
+	font-size: 12pt;
 }
 /* Off Canvas Menu - Style as your like */
 
@@ -374,6 +382,7 @@ hr {
 		top: -80px !important;
 }
 
+
 .media_line {
     display: flex;
     justify-content: center;
@@ -383,10 +392,13 @@ hr {
     position: relative;
     top: -50px;
 }
+p{
+	font-size: 15pt;
+}
 
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 375px) {
 
 	.hero {
 	    width: 100vw;
@@ -399,12 +411,24 @@ hr {
 	}
 
 	h1 {
-		font-size: 60px;
+		font-size: 48px;
 		margin-top: 16%;
 	}
 
 	h2{
 		font-size: 32px;
+	}
+	p{
+		font-size: 14px;
+	}
+	.media_line {
+		width: 90%;
+		display: inline-block;
+		white-space: normal;
+	}
+	.media_line img{
+		padding-bottom: 20px;
+		margin-left: 7%;
 	}
 	.contact input {
 		width: 100%;
@@ -424,7 +448,9 @@ hr {
 	nav ul{
 		display: none;
 	}
-
+li{
+	font-size: 11pt;
+}
 	span.showhide {
 		display: inline;
 		font-size: 30px;
@@ -455,7 +481,36 @@ hr {
 		position: relative;
 		top: -80px;
 	}
-
+	.tour_dates {
+			width: 90%;
+			margin: 0em;
+			list-style: none;
+			display: flex;
+			flex-direction: column;
+			align-items: baseline;
+		}
+		.verticalme{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			margin: 1%;
+		}
+		.verticalme ul{
+			position: relative;
+		}
+		.Tickets {
+			position: absolute;
+			height: 5%;
+			left: 40px;
+			width: 150px;
+			display: flex;
+			justify-content: center;
+			margin-top: -18px;
+		}
+		hr{
+			display: none;
+		}
 }
 /* ==========================================================================
    Helper classes
