@@ -1,0 +1,666 @@
+@import url('https://fonts.googleapis.com/css2?family=Astloch:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+	color: #222;
+	font-size: 1em;
+	line-height: 1.4;
+}
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+::selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio, canvas, iframe, img, svg, video {
+	vertical-align: middle;
+}
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+	resize: vertical;
+}
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* Setup the page to have it layout in a easy column */
+
+body {
+	background-color: #47004E;
+	color: white;
+	white-space: normal;
+	overflow-x: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: Helvetica, sans-serif;
+}
+.media {
+	width: 30%;
+	display: flex;
+	white-space: nowrap;
+}
+/* got rid of the img tag and put it in the .hero as a background image */
+
+.hero {
+	width: 100vw;
+	background-image: url('../img/homehero.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 1000px;
+	margin: 0px;
+}
+.hero2 {
+	width: 100vw;
+	background-image: url('../img/falloutabout.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 1000px;
+	margin: 0px;
+}
+.hero3 {
+	width: 100vw;
+	background-image: url('../img/HellaMegaPoster.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 1000px;
+	margin: 0px;
+}
+.Tickets {
+  position: absolute;
+  right: 0px;
+  height: 5%;
+  margin-top: 1.5%;
+  margin-right: 9.5%;
+}
+
+/* positioned the nav to the left */
+
+nav {
+	position: relative;
+	margin-bottom: 8%;
+}
+/* fixed margins with H1 */
+
+h1 {
+	text-align: center;
+	font-family: Astloch;
+	font-weight: 400;
+	font-size: 175px;
+	margin: 0px;
+	padding-top: 5%;
+	position:relative;
+	top:-100px;
+}
+nav ul {
+	list-style: none;
+	font-family: unica one;
+	font-size: 30px;
+	display: inline;
+}
+nav li {
+	display: inline-block;
+	padding: 20px;
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+h2 {
+	font-family: unica one;
+	font-style: cursive;
+	font-size: 50px;
+	text-align: center;
+}
+/* added in Media Line styles to get these items to align */
+
+.media_line {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	margin: 5%;
+}
+/* Added initial styles to get your contact form setup */
+
+/* Responsive Video */
+
+.videocontainer {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  }
+
+  /* Then style the iframe to fit in the container div with full height and width */
+  .responsive-iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+  }
+
+.contact {
+	width: 80%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 8%;
+}
+/* set the width of the form in the div */
+
+.contact form {
+	width: 100%;
+}
+/* set the initial width of the inputs */
+
+.contact input {
+	width: 100%;
+	height: 100px;
+	border-radius: 30px;
+}
+.contact textarea {
+	width: 100%;
+	height: 100px;
+	border-radius: 30px;
+}
+input::placeholder{
+	font-family: unica one;
+	font-size: 200%;
+	position: relative;
+	top: 5px;
+}
+textarea::placeholder{
+	font-family: unica one;
+	font-size: 200%;
+	position: relative;
+	top: 15px;
+}
+button#myCoolButton {
+    font-family: unica one;
+    width: 25%;
+    border-radius: 30px;
+    color: #47004E;
+    background: white;
+    margin-left: 39%;
+}
+footer {
+	background: #B88CDB;
+	height: 100px;
+	width: 100%;
+	color: #47004E;
+	font-family: Helvetica;
+	text-align: center;
+	position: static;
+	bottom: 0px;
+	margin: 0px;
+	display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+	text-indent: 30px;
+	padding: .5em 3em;
+	margin-left: 4em;
+	margin-right: 4em;
+	font-size: 16pt;
+}
+footer p {
+	margin: 0px;
+	text-indent: 0px;
+	padding: 0px;
+	margin-left: 0em;
+	margin-right: 0em;
+	font-size: 12pt;
+}
+/* Off Canvas Menu - Style as your like */
+
+/* The side navigation menu */
+
+.sidenav {
+	height: 100%;
+	/* 100% Full-height */
+	width: 0;
+	/* 0 width - change this with JavaScript */
+	position: fixed;
+	/* Stay in place */
+	z-index: 1;
+	/* Stay on top */
+	top: 0;
+	left: 0;
+	background-color: #111;
+	/* Black*/
+	overflow-x: hidden;
+	/* Disable horizontal scroll */
+	padding-top: 60px;
+	/* Place content 60px from the top */
+	transition: 0.5s;
+	/* 0.5 second transition effect to slide in the sidenav */
+}
+/* The navigation menu links */
+span.showhide {
+	display: none;
+}
+.sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+}
+/* When you mouse over the navigation links, change their color */
+
+.sidenav a:hover {
+	color: #f1f1f1;
+}
+/* Position and style the close button (top right corner) */
+
+.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+.media_line img {
+	width: 85%;
+	display: flex;
+}
+.tour_dates {
+	margin: 3em;
+	list-style: none;
+}
+hr {
+	width: 90%;
+	text-align: left;
+	margin-left: 2em;
+}
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+
+#main {
+	transition: margin-left .5s;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+@media screen and (max-height: 450px) {
+	.sidenav {
+		padding-top: 15px;
+	}
+	.sidenav a {
+		font-size: 18px;
+	}
+}
+/* On smaller screen sizes, we will display: inline to toggle the menu */
+
+
+
+@media screen and (max-width: 768px) {
+	h1 {
+		text-align: center;
+		font-family: Astloch;
+		font-weight: 400;
+		font-size: 125px;
+		margin: 0px;
+	}
+	.hero {
+	    width: 100vw;
+	    background-image: url(../img/homehero.jpg);
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    height: 500px;
+		margin: 0px;
+		position: relative;
+		top: -80px !important;
+}
+
+
+.media_line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 5%;
+    position: relative;
+    top: -50px;
+}
+p{
+	font-size: 15pt;
+}
+
+}
+
+@media screen and (max-width: 375px) {
+
+	.hero {
+	    width: 100vw;
+	    background-image: url(../img/homehero.jpg);
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    height: 300px;
+	    margin: 0px;
+	}
+
+#tourheader{
+	position: relative;
+	top: -45px;
+}
+	h1 {
+		font-size: 48px;
+		margin-top: 17%;
+	}
+
+	h2{
+		font-size: 32px;
+	}
+	p{
+		font-size: 14px;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	.media_line {
+		width: 90%;
+		display: inline-block;
+		white-space: normal;
+	}
+	.media_line img{
+		padding-bottom: 20px;
+		margin-left: 7%;
+	}
+	.contact input {
+		width: 100%;
+		height: 50px;
+		border-radius: 30px;
+	}
+	input::placeholder{
+		font-size: 100%;
+		top: 0px;
+	}
+	textarea::placeholder{
+		font-family: unica one;
+		font-size: 100%;
+		position: relative;
+		top: 15px;
+	}
+	nav ul{
+		display: none;
+	}
+li{
+	font-size: 11pt;
+}
+	span.showhide {
+		display: inline;
+		font-size: 30px;
+		cursor: pointer;
+		position: relative;
+		left: 30px;
+		top: 20px;
+	}
+
+	.hero2 {
+		width: 100vw;
+		background-image: url(../img/falloutabout.jpg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 500px;
+		margin: 0 auto;
+		position: relative;
+		top: -75px;
+	}
+
+	.hero3 {
+	    width: 100vw;
+	    background-image: url(../img/HellaMegaPoster.jpg);
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    height: 500px;
+	    margin: 0px;
+	    position: relative;
+	    top: -20px;
+	}
+	.tour_dates {
+			width: 90%;
+			margin: 0em;
+			list-style: none;
+			display: flex;
+			flex-direction: column;
+			align-items: baseline;
+			margin-left: -7%;
+		}
+		.verticalme{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			margin: 1%;
+		}
+		.verticalme ul{
+			position: relative;
+		}
+	#booger{
+		margin-top: 5%;
+	}
+		.Tickets {
+			position: absolute;
+			right: -5%;
+			display: flex;
+			justify-content: right;
+			margin-top: 11%;
+			margin-left: 39%;
+		}
+		hr{
+			display: none;
+			margin-top: 0px;
+		}
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden, [hidden] {
+	display: none !important;
+}
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+	border: 0;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+	/* 1 */
+}
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active, .sr-only.focusable:focus {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	white-space: inherit;
+	width: auto;
+}
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+	visibility: hidden;
+}
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before, .clearfix::after {
+	content: " ";
+	display: table;
+}
+.clearfix::after {
+	clear: both;
+}
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+	/* Style adjustments for viewports that meet the condition */
+}
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
+	/* Style adjustments for high resolution devices */
+}
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+	*, *::before, *::after {
+		background: #fff !important;
+		color: #000 !important;
+		/* Black prints faster */
+		box-shadow: none !important;
+		text-shadow: none !important;
+	}
+	a, a:visited {
+		text-decoration: underline;
+	}
+	a[href]::after {
+		content: " (" attr(href) ")";
+	}
+	abbr[title]::after {
+		content: " (" attr(title) ")";
+	}
+	/*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+	a[href^="#"]::after, a[href^="javascript:"]::after {
+		content: "";
+	}
+	pre {
+		white-space: pre-wrap !important;
+	}
+	pre, blockquote {
+		border: 1px solid #999;
+		page-break-inside: avoid;
+	}
+	/*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+	thead {
+		display: table-header-group;
+	}
+	tr, img {
+		page-break-inside: avoid;
+	}
+	p, h2, h3 {
+		orphans: 3;
+		widows: 3;
+	}
+	h2, h3 {
+		page-break-after: avoid;
+	}
+}
